@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1040" viewBox="0 0 1500 1040" role="img" aria-labelledby="title desc" style="background:#ffffff">
+  <title id="title">CURE-QKSD phase-unwrapping workflow</title>
+  <desc id="desc">A five-step diagram showing a continuous quantum autocorrelation signal sampled at discrete time steps, extraction of a wrapped phase, loss of the integer k, identification of k using two time-step energy ladders, and recovery of the correct energy.</desc>
+
+  <defs>
+    <style>
+      text {
+        font-kerning: normal;
+        font-variant-ligatures: common-ligatures;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-rendering: optimizeLegibility;
+      }
+      .serif { font-family: "STIX Two Text", "Times New Roman", serif; fill: #17364f; }
+      .math { font-family: "STIX Two Math", "Times New Roman", serif; font-style: normal; fill: #17364f; }
+      .title { font-size: 34px; font-weight: 700; }
+      .subtitle { font-size: 27px; }
+      .body { font-size: 25px; }
+      .small { font-size: 21px; }
+      .sub { font-family: "STIX Two Math", "Times New Roman", serif; font-size: 21px; font-style: normal; fill: #17364f; }
+      .roman-sub { font-family: "STIX Two Text", "Times New Roman", serif; font-size: 19px; fill: #17364f; }
+      .panel { fill: url(#panel-grid); stroke: #1d5d91; stroke-width: 3.2; }
+      .primary-stroke { stroke: #1d5d91; }
+      .primary-fill { fill: #1d5d91; }
+      .secondary-stroke { stroke: #78a9cf; }
+      .secondary-fill { fill: #78a9cf; }
+      .round { stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+
+    <pattern id="panel-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <rect width="24" height="24" fill="#fcfeff"/>
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1d5d91" stroke-width="0.65" opacity="0.055"/>
+    </pattern>
+
+    <clipPath id="clip-p1"><rect x="40" y="40" width="660" height="400" rx="26"/></clipPath>
+    <clipPath id="clip-p2"><rect x="800" y="40" width="660" height="400" rx="26"/></clipPath>
+    <clipPath id="clip-p3"><rect x="40" y="580" width="400" height="420" rx="26"/></clipPath>
+    <clipPath id="clip-p4"><rect x="480" y="520" width="540" height="480" rx="26"/></clipPath>
+    <clipPath id="clip-p5"><rect x="1060" y="580" width="400" height="420" rx="26"/></clipPath>
+  </defs>
+
+  <rect width="1500" height="1040" fill="#ffffff"/>
+
+  <rect class="panel" x="40" y="40" width="660" height="400" rx="26"/>
+  <rect class="panel" x="800" y="40" width="660" height="400" rx="26"/>
+  <rect class="panel" x="40" y="580" width="400" height="420" rx="26"/>
+  <rect class="panel" x="480" y="520" width="540" height="480" rx="26"/>
+  <rect class="panel" x="1060" y="580" width="400" height="420" rx="26"/>
+
+  <g font-family="STIX Two Text, Times New Roman, serif" font-size="23" font-weight="700" text-anchor="middle">
+    <circle cx="75" cy="75" r="22" fill="#1d5d91"/><text x="75" y="83" fill="#ffffff">1</text>
+    <circle cx="835" cy="75" r="22" fill="#1d5d91"/><text x="835" y="83" fill="#ffffff">2</text>
+    <circle cx="75" cy="615" r="22" fill="#1d5d91"/><text x="75" y="623" fill="#ffffff">3</text>
+    <circle cx="515" cy="555" r="22" fill="#1d5d91"/><text x="515" y="563" fill="#ffffff">4</text>
+    <circle cx="1095" cy="615" r="22" fill="#1d5d91"/><text x="1095" y="623" fill="#ffffff">5</text>
+  </g>
+
+  <g fill="#1d5d91" stroke="#1d5d91" stroke-width="4" class="round">
+    <line x1="714" y1="240" x2="775" y2="240"/><polygon points="775,226 795,240 775,254" stroke="none"/>
+    <path d="M 1130 446 V 505 H 240 V 558" fill="none"/>
+    <polygon points="226,558 254,558 240,578" stroke="none"/>
+    <line x1="445" y1="800" x2="460" y2="800"/><polygon points="460,787 478,800 460,813" stroke="none"/>
+    <line x1="1025" y1="800" x2="1040" y2="800"/><polygon points="1040,787 1058,800 1040,813" stroke="none"/>
+  </g>
+  <text class="serif" x="685" y="490" text-anchor="middle" font-size="22" font-weight="600" fill="#1d5d91">possible windings</text>
+
+  <text class="serif title" x="370" y="91" text-anchor="middle">quantum computer</text>
+  <rect x="295" y="120" width="150" height="125" rx="18" fill="#ffffff" stroke="#1d5d91" stroke-width="4"/>
+  <g stroke="#1d5d91" stroke-width="3" fill="none" class="round">
+    <line x1="295" y1="143" x2="235" y2="143"/><line x1="445" y1="143" x2="505" y2="143"/>
+    <line x1="295" y1="169" x2="235" y2="169"/><line x1="445" y1="169" x2="505" y2="169"/>
+    <line x1="295" y1="196" x2="235" y2="196"/><line x1="445" y1="196" x2="505" y2="196"/>
+    <line x1="295" y1="222" x2="235" y2="222"/><line x1="445" y1="222" x2="505" y2="222"/>
+  </g>
+  <g fill="#ffffff" stroke="#1d5d91" stroke-width="2.5">
+    <circle cx="230" cy="143" r="7"/><circle cx="510" cy="143" r="7"/>
+    <circle cx="230" cy="169" r="7"/><circle cx="510" cy="169" r="7"/>
+    <circle cx="230" cy="196" r="7"/><circle cx="510" cy="196" r="7"/>
+    <circle cx="230" cy="222" r="7"/><circle cx="510" cy="222" r="7"/>
+  </g>
+  <g fill="none" stroke="#1d5d91" stroke-width="2.5">
+    <ellipse cx="370" cy="183" rx="55" ry="21"/>
+    <ellipse cx="370" cy="183" rx="55" ry="21" transform="rotate(60 370 183)"/>
+    <ellipse cx="370" cy="183" rx="55" ry="21" transform="rotate(-60 370 183)"/>
+  </g>
+  <circle cx="370" cy="183" r="13" fill="#1d5d91"/>
+  <line x1="370" y1="258" x2="370" y2="300" stroke="#1d5d91" stroke-width="4"/>
+  <polygon points="356,300 384,300 370,321" fill="#1d5d91"/>
+  <text class="serif small" x="392" y="287" fill="#1d5d91">measure</text>
+  <line x1="180" y1="368.92" x2="610" y2="368.92" stroke="#4f7695" stroke-width="1.8" stroke-dasharray="3 6"/>
+  <g stroke="#78a9cf" stroke-width="2.2">
+    <line x1="190" y1="368.92" x2="190" y2="338.73"/>
+    <line x1="250" y1="368.92" x2="250" y2="374.41"/>
+    <line x1="310" y1="368.92" x2="310" y2="381.94"/>
+    <line x1="370" y1="368.92" x2="370" y2="367.74"/>
+    <line x1="430" y1="368.92" x2="430" y2="384.59"/>
+    <line x1="490" y1="368.92" x2="490" y2="334.59"/>
+    <line x1="550" y1="368.92" x2="550" y2="375.29"/>
+  </g>
+  <path d="M 190.0,338.73 L 195.1,342.64 L 200.3,347.29 L 205.4,352.32 L 210.6,357.37 L 215.7,362.13 L 220.9,366.31 L 226.0,369.72 L 231.1,372.23 L 236.3,373.83 L 241.4,374.6 L 246.6,374.66 L 251.7,374.22 L 256.9,373.52 L 262.0,372.78 L 267.1,372.23 L 272.3,372.04 L 277.4,372.32 L 282.6,373.11 L 287.7,374.38 L 292.9,376.03 L 298.0,377.89 L 303.1,379.77 L 308.3,381.46 L 313.4,382.75 L 318.6,383.49 L 323.7,383.54 L 328.9,382.88 L 334.0,381.53 L 339.1,379.6 L 344.3,377.25 L 349.4,374.72 L 354.6,372.27 L 359.7,370.13 L 364.9,368.57 L 370.0,367.74 L 375.1,367.79 L 380.3,368.73 L 385.4,370.51 L 390.6,372.97 L 395.7,375.9 L 400.9,378.98 L 406.0,381.91 L 411.1,384.33 L 416.3,385.95 L 421.4,386.5 L 426.6,385.8 L 431.7,383.76 L 436.9,380.41 L 442.0,375.87 L 447.1,370.39 L 452.3,364.27 L 457.4,357.88 L 462.6,351.64 L 467.7,345.92 L 472.9,341.1 L 478.0,337.47 L 483.1,335.23 L 488.3,334.5 L 493.4,335.27 L 498.6,337.42 L 503.7,340.75 L 508.9,344.98 L 514.0,349.79 L 519.1,354.84 L 524.3,359.78 L 529.4,364.34 L 534.6,368.27 L 539.7,371.44 L 544.9,373.77 L 550.0,375.29 L 555.1,376.11 L 560.3,376.38" fill="none" stroke="#1d5d91" stroke-width="3.2" class="round"/>
+  <g fill="#1d5d91" stroke="#ffffff" stroke-width="1.6">
+    <circle cx="190" cy="338.73" r="7"/>
+    <circle cx="250" cy="374.41" r="7"/>
+    <circle cx="310" cy="381.94" r="7"/>
+    <circle cx="370" cy="367.74" r="7"/>
+    <circle cx="430" cy="384.59" r="7"/>
+    <circle cx="490" cy="334.59" r="7"/>
+    <circle cx="550" cy="375.29" r="7"/>
+  </g>
+  <g fill="#1d5d91">
+    <circle cx="572" cy="368.92" r="4"/><circle cx="588" cy="368.92" r="4"/><circle cx="604" cy="368.92" r="4"/>
+  </g>
+  <text class="sub" x="170" y="318" text-anchor="middle">c(t)</text>
+  <text class="serif body" x="396" y="418" text-anchor="middle">autocorrelations <tspan font-family="STIX Two Math, Times New Roman, serif" font-style="normal">c(nτ)</tspan></text>
+
+  <text class="serif title" x="1130" y="91" text-anchor="middle">large-τ UQKSD</text>
+  <circle cx="1045" cy="245" r="105" fill="#ffffff" stroke="#1d5d91" stroke-width="3.5"/>
+  <line x1="920" y1="245" x2="1170" y2="245" stroke="#9ab7cd" stroke-width="1.7"/>
+  <line x1="1045" y1="120" x2="1045" y2="370" stroke="#9ab7cd" stroke-width="1.7"/>
+  <path d="M 1045 245 L 1150 245 A 105 105 0 0 0 1097.5 154.1 Z" fill="#1d5d91" fill-opacity="0.20"/>
+  <line x1="1045" y1="245" x2="1097.5" y2="154.1" stroke="#1d5d91" stroke-width="5" class="round"/>
+  <path d="M 1080.00,245.00 L 1080.11,241.93 L 1079.95,238.84 L 1079.51,235.75 L 1078.80,232.70 L 1077.82,229.69 L 1076.57,226.77 L 1075.06,223.95 L 1073.30,221.25 L 1071.30,218.70 L 1069.06,216.33 L 1066.61,214.14 L 1063.96,212.16 L 1061.13,210.42 L 1058.13,208.91 L 1055.00,207.67 L 1051.75,206.70 L 1048.41,206.02 L 1045.00,205.62 L 1041.55,205.53 L 1038.08,205.74 L 1034.62,206.26 L 1031.20,207.09 L 1027.85,208.21 L 1024.58,209.64 L 1021.44,211.35 L 1018.44,213.35 L 1015.61,215.61 L 1012.98,218.13 L 1010.56,220.88 L 1008.37,223.85 L 1006.45,227.02 L 1004.80,230.37 L 1003.45,233.87 L 1002.39,237.49 L 1001.66,241.21 L 1001.25,245.00 L 1001.17,248.83 L 1001.44,252.68 L 1002.04,256.51 L 1002.97,260.30 L 1004.25,264.00 L 1005.85,267.60 L 1007.77,271.07 L 1010.00,274.37 L 1012.52,277.48 L 1015.32,280.38 L 1018.37,283.03 L 1021.67,285.41 L 1025.18,287.51 L 1028.87,289.31 L 1032.73,290.78 L 1036.73,291.92 L 1040.83,292.70 L 1045.00,293.12 L 1049.22,293.18 L 1053.44,292.87 L 1057.64,292.19 L 1061.79,291.14 L 1065.85,289.72 L 1069.79,287.94 L 1073.58,285.82 L 1077.18,283.36 L 1080.58,280.58 L 1083.73,277.50 L 1086.61,274.14 L 1089.20,270.52 L 1091.48,266.67 L 1093.42,262.62 L 1095.01,258.40 L 1096.22,254.03 L 1097.06,249.55 L 1097.50,245.00 L 1097.54,240.40 L 1097.18,235.80 L 1096.42,231.22 L 1095.25,226.71 L 1093.68,222.30 L 1091.73,218.02 L 1089.40,213.91 L 1086.71,210.00 L 1083.67,206.33 L 1080.31,202.92 L 1076.65,199.80 L 1072.71,197.01" fill="none" stroke="#1d5d91" stroke-width="3.5" stroke-linejoin="round"/>
+  <polygon points="1072.71,197.01 1088.21,200.89 1077.73,212.18" fill="#1d5d91"/>
+  <circle cx="1097.5" cy="154.1" r="8.8" fill="#1d5d91" stroke="#ffffff" stroke-width="2"/>
+  <path d="M 1106.3 154.1 C 1148 145, 1181 160, 1214 176" fill="none" stroke="#1d5d91" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 9"/>
+  <rect x="1210" y="120" width="195" height="112" rx="18" fill="#edf5fa" stroke="#1d5d91" stroke-width="2"/>
+  <text class="serif" x="1307.5" y="154" text-anchor="middle" font-size="23" font-weight="700" fill="#1d5d91">extracted</text>
+  <text class="serif" x="1307.5" y="184" text-anchor="middle" font-size="23" font-weight="700" fill="#1d5d91">wrapped</text>
+  <text class="serif" x="1307.5" y="214" text-anchor="middle" font-size="23" font-weight="700" fill="#1d5d91">phase</text>
+  <text class="math" x="1130" y="392" text-anchor="middle" font-size="26">7π/3 → π/3 (mod 2π)</text>
+  <text class="serif" x="1130" y="426" text-anchor="middle" font-size="22" fill="#4f7695">7π/3 ≡ π/3 ≡ −5π/3</text>
+
+  <text class="serif" x="250" y="630" text-anchor="middle" font-size="30" font-weight="700">unknown integer <tspan font-style="normal">k</tspan></text>
+  <g aria-label="E equals E sub aliased plus 2 pi k over tau">
+    <text class="math" x="110" y="682" font-size="31">E = E</text>
+    <text class="roman-sub" x="183" y="694">aliased</text>
+    <text class="math" x="255" y="682" font-size="31">+ 2πk/τ</text>
+  </g>
+  <g stroke="#1d5d91" stroke-width="4" fill="#1d5d91" class="round">
+    <line x1="105" y1="730" x2="255" y2="730"/><circle cx="180" cy="730" r="12"/>
+    <line x1="105" y1="800" x2="255" y2="800"/><circle cx="180" cy="800" r="12"/>
+    <line x1="105" y1="870" x2="255" y2="870"/><circle cx="180" cy="870" r="12"/>
+    <line x1="105" y1="940" x2="255" y2="940"/><circle cx="180" cy="940" r="12"/>
+  </g>
+  <g class="math" font-size="27">
+    <text x="285" y="739">k = 2</text><text x="285" y="809">k = 1</text>
+    <text x="285" y="879">k = 0</text><text x="285" y="949">k = −1</text>
+  </g>
+  <text class="serif" x="390" y="814" text-anchor="middle" font-size="56" font-weight="700" fill="#1d5d91" aria-label="unknown winding">?</text>
+
+  <text class="serif title" x="770" y="570" text-anchor="middle" fill="#1d5d91">CURE-QKSD</text>
+  <text class="serif subtitle" x="770" y="607" text-anchor="middle">align candidate energies</text>
+
+  <line x1="550" y1="955" x2="550" y2="657" stroke="#1d5d91" stroke-width="3"/>
+  <polygon points="540,665 550,646 560,665" fill="#1d5d91"/>
+  <text class="math" x="550" y="636" text-anchor="middle" font-size="28">E</text>
+
+  <g transform="translate(50 0)">
+  <text class="math" x="640" y="675" text-anchor="middle" font-size="34" fill="#1d5d91">τ</text>
+  <text class="math" x="860" y="675" text-anchor="middle" font-size="34" fill="#1d5d91">τ′</text>
+
+  <line x1="640" y1="713" x2="640" y2="957" stroke="#1d5d91" stroke-width="2.5"/>
+  <g stroke="#1d5d91" stroke-width="4" fill="#1d5d91" class="round">
+    <line x1="610" y1="730" x2="670" y2="730"/><circle cx="640" cy="730" r="11"/>
+    <line x1="610" y1="800" x2="670" y2="800"/><circle cx="640" cy="800" r="13" fill="#ffffff" stroke-width="5"/>
+    <line x1="610" y1="870" x2="670" y2="870"/><circle cx="640" cy="870" r="11"/>
+    <line x1="610" y1="940" x2="670" y2="940"/><circle cx="640" cy="940" r="11"/>
+  </g>
+  <g class="math" font-size="23" text-anchor="end">
+    <text x="598" y="738">k = 2</text><text x="598" y="808" fill="#1d5d91">k = 1</text>
+    <text x="598" y="878">k = 0</text><text x="598" y="948">k = −1</text>
+  </g>
+
+  <line x1="860" y1="690" x2="860" y2="991" stroke="#1d5d91" stroke-width="2.5"/>
+  <g stroke="#1d5d91" stroke-width="4" fill="#1d5d91" class="round">
+    <line x1="830" y1="710" x2="890" y2="710"/><circle cx="860" cy="710" r="11"/>
+    <line x1="830" y1="800" x2="890" y2="800"/><circle cx="860" cy="800" r="13" fill="#ffffff" stroke-width="5"/>
+    <line x1="830" y1="890" x2="890" y2="890"/><circle cx="860" cy="890" r="11"/>
+    <line x1="830" y1="980" x2="890" y2="980"/><circle cx="860" cy="980" r="11"/>
+  </g>
+  <line x1="653" y1="800" x2="847" y2="800" stroke="#1d5d91" stroke-width="4"/>
+  <rect x="687" y="753" width="126" height="34" rx="10" fill="#ffffff" stroke="#c8ddeb" stroke-width="1.5"/>
+  <text class="serif" x="750" y="777" text-anchor="middle" font-size="20" font-weight="700" fill="#1d5d91">same energy</text>
+  </g>
+
+  <text class="serif title" x="1260" y="630" text-anchor="middle">correct energy</text>
+  <g aria-label="E equals E sub aliased plus 2 pi times 1 over tau">
+    <text class="math" x="1110" y="682" font-size="31">E = E</text>
+    <text class="roman-sub" x="1187" y="694">aliased</text>
+    <text class="math" x="1260" y="682" font-size="31">+ 2π(1)/τ</text>
+  </g>
+  <g class="round">
+    <line x1="1110" y1="730" x2="1260" y2="730" stroke="#b9cee0" stroke-width="4"/><circle cx="1185" cy="730" r="12" fill="#e3edf5" stroke="#9ab7cd" stroke-width="2.5"/>
+    <line x1="1110" y1="800" x2="1260" y2="800" stroke="#1d5d91" stroke-width="5"/><circle cx="1185" cy="800" r="14" fill="#1d5d91" stroke="#17364f" stroke-width="2.5"/>
+    <line x1="1110" y1="870" x2="1260" y2="870" stroke="#b9cee0" stroke-width="4"/><circle cx="1185" cy="870" r="12" fill="#e3edf5" stroke="#9ab7cd" stroke-width="2.5"/>
+    <line x1="1110" y1="940" x2="1260" y2="940" stroke="#b9cee0" stroke-width="4"/><circle cx="1185" cy="940" r="12" fill="#e3edf5" stroke="#9ab7cd" stroke-width="2.5"/>
+  </g>
+  <g class="math" font-size="27">
+    <text x="1290" y="739" fill="#9ab7cd">k = 2</text>
+    <text x="1290" y="809" fill="#1d5d91" font-weight="700">k = 1</text>
+    <text x="1290" y="879" fill="#9ab7cd">k = 0</text>
+    <text x="1290" y="949" fill="#9ab7cd">k = −1</text>
+  </g>
+  <path d="M 1394 779 l 12 14 l 27 -34" fill="none" stroke="#1d5d91" stroke-width="6" class="round"/>
+  <text class="serif" x="1410" y="830" text-anchor="middle" font-size="21" font-weight="700" fill="#1d5d91">selected</text>
+</svg>

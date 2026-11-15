@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "CURE-QKSD paper reproducibility code and data"
+type: software
+authors:
+  - family-names: Jain
+    given-names: Tushar Kumar
+    orcid: "https://orcid.org/0009-0003-6843-2870"
+  - family-names: Maitra
+    given-names: Rahul
+    orcid: "https://orcid.org/0000-0002-3255-3115"
+  - family-names: Mayhall
+    given-names: Nicholas J.
+    orcid: "https://orcid.org/0000-0002-1312-9781"
+license: MIT
+repository-code: "https://github.com/tus-jain/CURE-QKSD"
+preferred-citation:
+  type: article
+  title: "Classical phase unwrapping enables large-time-step unitary quantum Krylov subspace diagonalization"
+  authors:
+    - family-names: Jain
+      given-names: Tushar Kumar
+      orcid: "https://orcid.org/0009-0003-6843-2870"
+    - family-names: Maitra
+      given-names: Rahul
+      orcid: "https://orcid.org/0000-0002-3255-3115"
+    - family-names: Mayhall
+      given-names: Nicholas J.
+      orcid: "https://orcid.org/0000-0002-1312-9781"
+  year: 2026
+  url: "https://arxiv.org/abs/2611.14214"

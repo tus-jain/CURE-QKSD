@@ -1,0 +1,1202 @@
+{
+  "results": {
+    "BeH2": {
+      "E_ccsd": -15.344058195975217,
+      "E_hf": -15.163068978241654,
+      "M": 80,
+      "M_noiseless": {
+        "M": {
+          "__array__": "array_0"
+        },
+        "err": {
+          "__array__": "array_1"
+        },
+        "n_grids": {
+          "__array__": "array_2"
+        },
+        "tau1": 0.40927912449049697,
+        "tau_alias": 0.20463956224524849
+      },
+      "M_noisy": 44,
+      "_cache_key": [
+        80,
+        44,
+        6,
+        0.001,
+        [
+          0.2,
+          0.3,
+          0.5,
+          0.8,
+          1.0,
+          1.3,
+          1.7,
+          2.2,
+          2.8,
+          3.5,
+          4.3,
+          5.2
+        ],
+        [
+          0.5,
+          0.8,
+          1.0,
+          1.3,
+          1.7,
+          2.2,
+          2.8,
+          3.5,
+          4.3,
+          5.2
+        ],
+        0.0001,
+        1,
+        0,
+        "L_total_ge_0.9999",
+        "fill_nearest_no_passthrough",
+        "noisy_sweep",
+        "ccsd_hf_gap_buffer_0.10",
+        [
+          -0.280989217733563,
+          0.4179051150828327
+        ],
+        [
+          -0.280989217733563,
+          0.0
+        ],
+        "autocorrelation_lag_toeplitz",
+        "1.5_sigma_sqrt_M_empirical"
+      ],
+      "accept_level": 0.9999,
+      "exact_energies": {
+        "__array__": "array_3"
+      },
+      "hf_gap": 0.31790511508283265,
+      "max_factor_tested": 7.0,
+      "noisy_state": 0,
+      "tau_alias": 0.20463956224524849,
+      "tau_alias_per_state": {
+        "__array__": "array_4"
+      },
+      "tau_noiseless": {
+        "E": {
+          "__array__": "array_5"
+        },
+        "cond_base": {
+          "__array__": "array_6"
+        },
+        "err": {
+          "__array__": "array_7"
+        },
+        "factors": {
+          "__array__": "array_8"
+        },
+        "n_grids": {
+          "__array__": "array_9"
+        },
+        "tau": {
+          "__array__": "array_10"
+        },
+        "tau_alias": 0.20463956224524849
+      },
+      "tau_noisy": {
+        "cure1_errors": {
+          "__array__": "array_11"
+        },
+        "cure1_median": {
+          "__array__": "array_12"
+        },
+        "cure1_q25": {
+          "__array__": "array_13"
+        },
+        "cure1_q75": {
+          "__array__": "array_14"
+        },
+        "cure_errors": {
+          "__array__": "array_15"
+        },
+        "cure_median": {
+          "__array__": "array_16"
+        },
+        "cure_q25": {
+          "__array__": "array_17"
+        },
+        "cure_q75": {
+          "__array__": "array_18"
+        },
+        "factors": {
+          "__array__": "array_19"
+        },
+        "n_grids": {
+          "__array__": "array_20"
+        },
+        "plain_errors": {
+          "__array__": "array_21"
+        },
+        "plain_median": {
+          "__array__": "array_22"
+        },
+        "plain_q25": {
+          "__array__": "array_23"
+        },
+        "plain_q75": {
+          "__array__": "array_24"
+        },
+        "state": 0,
+        "tau": {
+          "__array__": "array_25"
+        },
+        "tau_alias": 0.20463956224524849
+      },
+      "weight_cutoff": 0.001,
+      "window": [
+        -0.280989217733563,
+        0.4179051150828327
+      ],
+      "window_gs": [
+        -0.280989217733563,
+        0.0
+      ],
+      "window_noisy": [
+        -0.280989217733563,
+        0.0
+      ],
+      "window_rule": "ccsd_hf_gap_buffer_0.10"
+    },
+    "H2O_R1.4": {
+      "E_ccsd": -74.9094646175048,
+      "E_hf": -74.77116729999705,
+      "M": 67,
+      "M_noiseless": {
+        "M": {
+          "__array__": "array_26"
+        },
+        "err": {
+          "__array__": "array_27"
+        },
+        "n_grids": {
+          "__array__": "array_28"
+        },
+        "tau1": 0.08387615195874581,
+        "tau_alias": 0.04193807597937291
+      },
+      "M_noisy": 50,
+      "_cache_key": [
+        67,
+        50,
+        5,
+        0.001,
+        [
+          0.2,
+          0.3,
+          0.5,
+          0.8,
+          1.0,
+          1.3,
+          1.7,
+          2.2,
+          2.8,
+          3.5,
+          4.3,
+          5.2,
+          6.2,
+          7.3,
+          8.5,
+          10.0,
+          11.7,
+          13.7,
+          16.0,
+          18.7,
+          21.9,
+          25.0
+        ],
+        [
+          0.1,
+          0.2,
+          0.3,
+          0.5,
+          0.8,
+          1.0,
+          1.3,
+          1.7,
+          2.2,
+          2.8,
+          3.5,
+          4.3,
+          5.2,
+          6.2,
+          7.3,
+          8.5,
+          10.0
+        ],
+        0.0001,
+        1,
+        0,
+        "L_total_ge_0.9999",
+        "fill_nearest_no_passthrough",
+        "noisy_sweep",
+        "ccsd_hf_gap_buffer_0.10",
+        [
+          -0.23829731750774955,
+          0.7757465956920541
+        ],
+        [
+          -0.23829731750774955,
+          0.0
+        ],
+        "autocorrelation_lag_toeplitz",
+        "1.5_sigma_sqrt_M_empirical"
+      ],
+      "accept_level": 0.9999,
+      "exact_energies": {
+        "__array__": "array_29"
+      },
+      "hf_gap": 0.6757465956920541,
+      "max_factor_tested": 7.0,
+      "noisy_state": 0,
+      "tau_alias": 0.04193807597937291,
+      "tau_alias_per_state": {
+        "__array__": "array_30"
+      },
+      "tau_noiseless": {
+        "E": {
+          "__array__": "array_31"
+        },
+        "cond_base": {
+          "__array__": "array_32"
+        },
+        "err": {
+          "__array__": "array_33"
+        },
+        "factors": {
+          "__array__": "array_34"
+        },
+        "n_grids": {
+          "__array__": "array_35"
+        },
+        "tau": {
+          "__array__": "array_36"
+        },
+        "tau_alias": 0.04193807597937291
+      },
+      "tau_noisy": {
+        "cure1_errors": {
+          "__array__": "array_37"
+        },
+        "cure1_median": {
+          "__array__": "array_38"
+        },
+        "cure1_q25": {
+          "__array__": "array_39"
+        },
+        "cure1_q75": {
+          "__array__": "array_40"
+        },
+        "cure_errors": {
+          "__array__": "array_41"
+        },
+        "cure_median": {
+          "__array__": "array_42"
+        },
+        "cure_q25": {
+          "__array__": "array_43"
+        },
+        "cure_q75": {
+          "__array__": "array_44"
+        },
+        "factors": {
+          "__array__": "array_45"
+        },
+        "n_grids": {
+          "__array__": "array_46"
+        },
+        "plain_errors": {
+          "__array__": "array_47"
+        },
+        "plain_median": {
+          "__array__": "array_48"
+        },
+        "plain_q25": {
+          "__array__": "array_49"
+        },
+        "plain_q75": {
+          "__array__": "array_50"
+        },
+        "state": 0,
+        "tau": {
+          "__array__": "array_51"
+        },
+        "tau_alias": 0.04193807597937291
+      },
+      "weight_cutoff": 0.001,
+      "window": [
+        -0.23829731750774955,
+        0.7757465956920541
+      ],
+      "window_gs": [
+        -0.23829731750774955,
+        0.0
+      ],
+      "window_noisy": [
+        -0.23829731750774955,
+        0.0
+      ],
+      "window_rule": "ccsd_hf_gap_buffer_0.10"
+    },
+    "H6": {
+      "E_ccsd": -2.9998514912772345,
+      "E_hf": -2.7501500441838926,
+      "M": 44,
+      "M_noiseless": {
+        "M": {
+          "__array__": "array_52"
+        },
+        "err": {
+          "__array__": "array_53"
+        },
+        "n_grids": {
+          "__array__": "array_54"
+        },
+        "tau1": 2.0974956023317337,
+        "tau_alias": 1.0487478011658669
+      },
+      "M_noisy": 44,
+      "_cache_key": [
+        44,
+        44,
+        3,
+        0.001,
+        [
+          0.2,
+          0.3,
+          0.5,
+          0.8,
+          1.0,
+          1.3,
+          1.7
+        ],
+        [
+          0.1,
+          0.2,
+          0.3,
+          0.5,
+          0.8,
+          1.0,
+          1.3,
+          1.7,
+          2.2
+        ],
+        0.0001,
+        1,
+        1,
+        "L_total_ge_0.9999",
+        "fill_nearest_no_passthrough",
+        "noisy_sweep",
+        "ccsd_hf_gap_buffer_0.10",
+        [
+          -0.34970144709334183,
+          0.4572103013402149
+        ],
+        [
+          -0.34970144709334183,
+          0.0
+        ],
+        "autocorrelation_lag_toeplitz",
+        "1.5_sigma_sqrt_M_empirical"
+      ],
+      "accept_level": 0.9999,
+      "exact_energies": {
+        "__array__": "array_55"
+      },
+      "hf_gap": 0.3572103013402149,
+      "max_factor_tested": 3.0,
+      "noisy_state": 1,
+      "tau_alias": 1.0487478011658669,
+      "tau_alias_per_state": {
+        "__array__": "array_56"
+      },
+      "tau_noiseless": {
+        "E": {
+          "__array__": "array_57"
+        },
+        "cond_base": {
+          "__array__": "array_58"
+        },
+        "err": {
+          "__array__": "array_59"
+        },
+        "factors": {
+          "__array__": "array_60"
+        },
+        "n_grids": {
+          "__array__": "array_61"
+        },
+        "tau": {
+          "__array__": "array_62"
+        },
+        "tau_alias": 1.0487478011658669
+      },
+      "tau_noisy": {
+        "cure1_errors": {
+          "__array__": "array_63"
+        },
+        "cure1_median": {
+          "__array__": "array_64"
+        },
+        "cure1_q25": {
+          "__array__": "array_65"
+        },
+        "cure1_q75": {
+          "__array__": "array_66"
+        },
+        "cure_errors": {
+          "__array__": "array_67"
+        },
+        "cure_median": {
+          "__array__": "array_68"
+        },
+        "cure_q25": {
+          "__array__": "array_69"
+        },
+        "cure_q75": {
+          "__array__": "array_70"
+        },
+        "factors": {
+          "__array__": "array_71"
+        },
+        "n_grids": {
+          "__array__": "array_72"
+        },
+        "plain_errors": {
+          "__array__": "array_73"
+        },
+        "plain_median": {
+          "__array__": "array_74"
+        },
+        "plain_q25": {
+          "__array__": "array_75"
+        },
+        "plain_q75": {
+          "__array__": "array_76"
+        },
+        "state": 1,
+        "tau": {
+          "__array__": "array_77"
+        },
+        "tau_alias": 1.0487478011658669
+      },
+      "weight_cutoff": 0.001,
+      "window": [
+        -0.34970144709334183,
+        0.4572103013402149
+      ],
+      "window_gs": [
+        -0.34970144709334183,
+        0.0
+      ],
+      "window_noisy": [
+        -0.34970144709334183,
+        0.4572103013402149
+      ],
+      "window_rule": "ccsd_hf_gap_buffer_0.10"
+    },
+    "HF": {
+      "E_ccsd": -98.51936016373607,
+      "E_hf": -98.41475042429451,
+      "M": 65,
+      "M_noiseless": {
+        "M": {
+          "__array__": "array_78"
+        },
+        "err": {
+          "__array__": "array_79"
+        },
+        "n_grids": {
+          "__array__": "array_80"
+        },
+        "tau1": 0.06377614812739017,
+        "tau_alias": 0.031888074063695086
+      },
+      "M_noisy": 65,
+      "_cache_key": [
+        65,
+        65,
+        4,
+        0.001,
+        [
+          0.2,
+          0.3,
+          0.5,
+          0.8,
+          1.0,
+          1.3,
+          1.7,
+          2.2,
+          2.8,
+          3.5,
+          4.3,
+          5.2,
+          6.2,
+          7.3,
+          8.5,
+          10.0
+        ],
+        [
+          0.5,
+          1.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          13.7,
+          16.0,
+          20.0,
+          25.0
+        ],
+        0.0001,
+        1,
+        1,
+        "L_total_ge_0.9999",
+        "fill_nearest_no_passthrough",
+        "noisy_sweep",
+        "ccsd_hf_gap_buffer_0.10",
+        [
+          -0.20460973944155683,
+          0.7394365536935422
+        ],
+        [
+          -0.20460973944155683,
+          0.0
+        ],
+        "autocorrelation_lag_toeplitz",
+        "1.5_sigma_sqrt_M_empirical"
+      ],
+      "accept_level": 0.9999,
+      "exact_energies": {
+        "__array__": "array_81"
+      },
+      "hf_gap": 0.6394365536935422,
+      "max_factor_tested": 7.0,
+      "noisy_state": 1,
+      "tau_alias": 0.031888074063695086,
+      "tau_alias_per_state": {
+        "__array__": "array_82"
+      },
+      "tau_noiseless": {
+        "E": {
+          "__array__": "array_83"
+        },
+        "cond_base": {
+          "__array__": "array_84"
+        },
+        "err": {
+          "__array__": "array_85"
+        },
+        "factors": {
+          "__array__": "array_86"
+        },
+        "n_grids": {
+          "__array__": "array_87"
+        },
+        "tau": {
+          "__array__": "array_88"
+        },
+        "tau_alias": 0.031888074063695086
+      },
+      "tau_noisy": {
+        "cure1_errors": {
+          "__array__": "array_89"
+        },
+        "cure1_median": {
+          "__array__": "array_90"
+        },
+        "cure1_q25": {
+          "__array__": "array_91"
+        },
+        "cure1_q75": {
+          "__array__": "array_92"
+        },
+        "cure_errors": {
+          "__array__": "array_93"
+        },
+        "cure_median": {
+          "__array__": "array_94"
+        },
+        "cure_q25": {
+          "__array__": "array_95"
+        },
+        "cure_q75": {
+          "__array__": "array_96"
+        },
+        "factors": {
+          "__array__": "array_97"
+        },
+        "n_grids": {
+          "__array__": "array_98"
+        },
+        "plain_errors": {
+          "__array__": "array_99"
+        },
+        "plain_median": {
+          "__array__": "array_100"
+        },
+        "plain_q25": {
+          "__array__": "array_101"
+        },
+        "plain_q75": {
+          "__array__": "array_102"
+        },
+        "state": 1,
+        "tau": {
+          "__array__": "array_103"
+        },
+        "tau_alias": 0.031888074063695086
+      },
+      "weight_cutoff": 0.001,
+      "window": [
+        -0.20460973944155683,
+        0.7394365536935422
+      ],
+      "window_gs": [
+        -0.20460973944155683,
+        0.0
+      ],
+      "window_noisy": [
+        -0.20460973944155683,
+        0.7394365536935422
+      ],
+      "window_rule": "ccsd_hf_gap_buffer_0.10"
+    },
+    "LiH": {
+      "E_ccsd": -7.786927321567868,
+      "E_hf": -7.653296947383691,
+      "M": 38,
+      "M_noiseless": {
+        "M": {
+          "__array__": "array_104"
+        },
+        "err": {
+          "__array__": "array_105"
+        },
+        "n_grids": {
+          "__array__": "array_106"
+        },
+        "tau1": 0.8068769713048352,
+        "tau_alias": 0.4034384856524176
+      },
+      "M_noisy": 20,
+      "_cache_key": [
+        38,
+        20,
+        4,
+        0.001,
+        [
+          0.2,
+          0.3,
+          0.5,
+          0.8,
+          1.0,
+          1.3,
+          1.7,
+          2.2
+        ],
+        [
+          0.5,
+          0.8,
+          1.0,
+          1.3,
+          1.7,
+          2.2,
+          2.8,
+          3.5,
+          4.3,
+          5.2
+        ],
+        0.0001,
+        1,
+        0,
+        "L_total_ge_0.9999",
+        "fill_nearest_no_passthrough",
+        "noisy_sweep",
+        "ccsd_hf_gap_buffer_0.10",
+        [
+          -0.23363037418417712,
+          0.29034108480631454
+        ],
+        [
+          -0.23363037418417712,
+          0.0
+        ],
+        "autocorrelation_lag_toeplitz",
+        "1.5_sigma_sqrt_M_empirical"
+      ],
+      "accept_level": 0.9999,
+      "exact_energies": {
+        "__array__": "array_107"
+      },
+      "hf_gap": 0.19034108480631454,
+      "max_factor_tested": 7.0,
+      "noisy_state": 0,
+      "tau_alias": 0.4034384856524176,
+      "tau_alias_per_state": {
+        "__array__": "array_108"
+      },
+      "tau_noiseless": {
+        "E": {
+          "__array__": "array_109"
+        },
+        "cond_base": {
+          "__array__": "array_110"
+        },
+        "err": {
+          "__array__": "array_111"
+        },
+        "factors": {
+          "__array__": "array_112"
+        },
+        "n_grids": {
+          "__array__": "array_113"
+        },
+        "tau": {
+          "__array__": "array_114"
+        },
+        "tau_alias": 0.4034384856524176
+      },
+      "tau_noisy": {
+        "cure1_errors": {
+          "__array__": "array_115"
+        },
+        "cure1_median": {
+          "__array__": "array_116"
+        },
+        "cure1_q25": {
+          "__array__": "array_117"
+        },
+        "cure1_q75": {
+          "__array__": "array_118"
+        },
+        "cure_errors": {
+          "__array__": "array_119"
+        },
+        "cure_median": {
+          "__array__": "array_120"
+        },
+        "cure_q25": {
+          "__array__": "array_121"
+        },
+        "cure_q75": {
+          "__array__": "array_122"
+        },
+        "factors": {
+          "__array__": "array_123"
+        },
+        "n_grids": {
+          "__array__": "array_124"
+        },
+        "plain_errors": {
+          "__array__": "array_125"
+        },
+        "plain_median": {
+          "__array__": "array_126"
+        },
+        "plain_q25": {
+          "__array__": "array_127"
+        },
+        "plain_q75": {
+          "__array__": "array_128"
+        },
+        "state": 0,
+        "tau": {
+          "__array__": "array_129"
+        },
+        "tau_alias": 0.4034384856524176
+      },
+      "weight_cutoff": 0.001,
+      "window": [
+        -0.23363037418417712,
+        0.29034108480631454
+      ],
+      "window_gs": [
+        -0.23363037418417712,
+        0.0
+      ],
+      "window_noisy": [
+        -0.23363037418417712,
+        0.0
+      ],
+      "window_rule": "ccsd_hf_gap_buffer_0.10"
+    },
+    "N2": {
+      "E_ccsd": -107.56785929388353,
+      "E_hf": -107.27244850120607,
+      "M": 80,
+      "M_noiseless": {
+        "M": {
+          "__array__": "array_130"
+        },
+        "err": {
+          "__array__": "array_131"
+        },
+        "n_grids": {
+          "__array__": "array_132"
+        },
+        "tau1": 0.058403883820153636,
+        "tau_alias": 0.029201941910076818
+      },
+      "M_noisy": 20,
+      "_cache_key": [
+        80,
+        20,
+        6,
+        0.001,
+        [
+          0.2,
+          0.3,
+          0.5,
+          0.8,
+          1.0,
+          1.3,
+          1.7,
+          2.2,
+          2.8,
+          3.5,
+          4.3,
+          5.2,
+          6.2,
+          7.3,
+          8.5,
+          10.0,
+          11.7,
+          13.7,
+          16.0,
+          18.7,
+          21.9,
+          25.0,
+          29.2,
+          34.1
+        ],
+        [
+          0.5,
+          1,
+          2,
+          5,
+          10,
+          17,
+          26,
+          34,
+          43,
+          51,
+          60,
+          68,
+          77,
+          86,
+          94,
+          103,
+          120
+        ],
+        0.0001,
+        1,
+        1,
+        "L_total_ge_0.9999",
+        "fill_nearest_no_passthrough",
+        "noisy_sweep",
+        "ccsd_hf_gap_buffer_0.10",
+        [
+          -0.39541079267745827,
+          0.6153468180409378
+        ],
+        [
+          -0.39541079267745827,
+          0.0
+        ],
+        "autocorrelation_lag_toeplitz",
+        "1.5_sigma_sqrt_M_empirical"
+      ],
+      "accept_level": 0.9999,
+      "exact_energies": {
+        "__array__": "array_133"
+      },
+      "hf_gap": 0.5153468180409378,
+      "max_factor_tested": 7.0,
+      "noisy_state": 1,
+      "tau_alias": 0.029201941910076818,
+      "tau_alias_per_state": {
+        "__array__": "array_134"
+      },
+      "tau_noiseless": {
+        "E": {
+          "__array__": "array_135"
+        },
+        "cond_base": {
+          "__array__": "array_136"
+        },
+        "err": {
+          "__array__": "array_137"
+        },
+        "factors": {
+          "__array__": "array_138"
+        },
+        "n_grids": {
+          "__array__": "array_139"
+        },
+        "tau": {
+          "__array__": "array_140"
+        },
+        "tau_alias": 0.029201941910076818
+      },
+      "tau_noisy": {
+        "cure1_errors": {
+          "__array__": "array_141"
+        },
+        "cure1_median": {
+          "__array__": "array_142"
+        },
+        "cure1_q25": {
+          "__array__": "array_143"
+        },
+        "cure1_q75": {
+          "__array__": "array_144"
+        },
+        "cure_errors": {
+          "__array__": "array_145"
+        },
+        "cure_median": {
+          "__array__": "array_146"
+        },
+        "cure_q25": {
+          "__array__": "array_147"
+        },
+        "cure_q75": {
+          "__array__": "array_148"
+        },
+        "factors": {
+          "__array__": "array_149"
+        },
+        "n_grids": {
+          "__array__": "array_150"
+        },
+        "plain_errors": {
+          "__array__": "array_151"
+        },
+        "plain_median": {
+          "__array__": "array_152"
+        },
+        "plain_q25": {
+          "__array__": "array_153"
+        },
+        "plain_q75": {
+          "__array__": "array_154"
+        },
+        "state": 1,
+        "tau": {
+          "__array__": "array_155"
+        },
+        "tau_alias": 0.029201941910076818
+      },
+      "weight_cutoff": 0.001,
+      "window": [
+        -0.39541079267745827,
+        0.6153468180409378
+      ],
+      "window_gs": [
+        -0.39541079267745827,
+        0.0
+      ],
+      "window_noisy": [
+        -0.39541079267745827,
+        0.6153468180409378
+      ],
+      "window_rule": "ccsd_hf_gap_buffer_0.10"
+    }
+  },
+  "systems": {
+    "BeH2": {
+      "basis": "sto-3g",
+      "geometry": [
+        [
+          "Be",
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            2.5
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            -2.5
+          ]
+        ]
+      ],
+      "multiplicity": 1,
+      "pretty": "Stretched BeH$_2$ ($d=2.5\\,\\mathrm{\\AA}$)"
+    },
+    "H2O_R1.4": {
+      "basis": "sto-3g",
+      "geometry": [
+        [
+          "O",
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          "H",
+          [
+            1.1069654032413805,
+            0.857104192048229,
+            0.0
+          ]
+        ],
+        [
+          "H",
+          [
+            -1.1069654032413805,
+            0.857104192048229,
+            0.0
+          ]
+        ]
+      ],
+      "multiplicity": 1,
+      "pretty": "Stretched H$_2$O ($R=1.4\\,\\mathrm{\\AA}$)"
+    },
+    "H6": {
+      "basis": "sto-3g",
+      "geometry": [
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            1.5
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            3.0
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            4.5
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            6.0
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            7.5
+          ]
+        ]
+      ],
+      "multiplicity": 1,
+      "pretty": "Stretched H$_6$ chain ($r_{\\mathrm{HH}}=1.5\\,\\mathrm{\\AA}$)"
+    },
+    "HF": {
+      "basis": "sto-3g",
+      "geometry": [
+        [
+          "F",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            0,
+            1.5
+          ]
+        ]
+      ],
+      "multiplicity": 1,
+      "pretty": "Stretched HF ($d=1.5\\,\\mathrm{\\AA}$)"
+    },
+    "LiH": {
+      "basis": "sto-3g",
+      "geometry": [
+        [
+          "Li",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            0,
+            3.595
+          ]
+        ]
+      ],
+      "multiplicity": 1,
+      "pretty": "Stretched LiH ($d=3.595\\,\\mathrm{\\AA}$)"
+    },
+    "N2": {
+      "basis": "sto-3g",
+      "builder": "sector",
+      "geometry": [
+        [
+          "N",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            0,
+            0,
+            1.5
+          ]
+        ]
+      ],
+      "multiplicity": 1,
+      "pretty": "Stretched N$_2$ ($d=1.5\\,\\mathrm{\\AA}$)"
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "BeH2": {
+    "basis": "sto-3g",
+    "geometry": [
+      [
+        "Be",
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          2.5
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          -2.5
+        ]
+      ]
+    ],
+    "multiplicity": 1,
+    "pretty": "Stretched BeH$_2$ ($d=2.5\\,\\mathrm{\\AA}$)"
+  },
+  "H2O_R1.4": {
+    "basis": "sto-3g",
+    "geometry": [
+      [
+        "O",
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        "H",
+        [
+          1.1069654032413805,
+          0.857104192048229,
+          0.0
+        ]
+      ],
+      [
+        "H",
+        [
+          -1.1069654032413805,
+          0.857104192048229,
+          0.0
+        ]
+      ]
+    ],
+    "multiplicity": 1,
+    "pretty": "Stretched H$_2$O ($R=1.4\\,\\mathrm{\\AA}$)"
+  },
+  "H6": {
+    "basis": "sto-3g",
+    "geometry": [
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          1.5
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          3.0
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          4.5
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          6.0
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          7.5
+        ]
+      ]
+    ],
+    "multiplicity": 1,
+    "pretty": "Stretched H$_6$ chain ($r_{\\mathrm{HH}}=1.5\\,\\mathrm{\\AA}$)"
+  },
+  "HF": {
+    "basis": "sto-3g",
+    "geometry": [
+      [
+        "F",
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        "H",
+        [
+          0,
+          0,
+          1.5
+        ]
+      ]
+    ],
+    "multiplicity": 1,
+    "pretty": "Stretched HF ($d=1.5\\,\\mathrm{\\AA}$)"
+  },
+  "LiH": {
+    "basis": "sto-3g",
+    "geometry": [
+      [
+        "Li",
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        "H",
+        [
+          0,
+          0,
+          3.595
+        ]
+      ]
+    ],
+    "multiplicity": 1,
+    "pretty": "Stretched LiH ($d=3.595\\,\\mathrm{\\AA}$)"
+  },
+  "N2": {
+    "basis": "sto-3g",
+    "builder": "sector",
+    "geometry": [
+      [
+        "N",
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        "N",
+        [
+          0,
+          0,
+          1.5
+        ]
+      ]
+    ],
+    "multiplicity": 1,
+    "pretty": "Stretched N$_2$ ($d=1.5\\,\\mathrm{\\AA}$)"
+  }
+}
