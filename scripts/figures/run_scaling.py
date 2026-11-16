@@ -56,7 +56,7 @@ plot_counts(ax1, images(n2, tag), n2[tag + "__roots"].mean(0), _style.INK, "s", 
 ax2.plot(G, n2[tag + "__correct"].all(2).mean(0), "s--", color=_style.INK, mfc="white", ms=4.5, lw=0.8)
 ax1.set_yscale("log")
 ax1.set_xlabel("number of runs $G$")
-ax1.set_ylabel("images per calculation")
+ax1.set_ylabel("phantom peaks per calculation")
 ax1.set_ylim(3e-4, 3e3)
 ax1.legend(ncol=2, loc="upper right")
 ax2.set_xlabel("number of runs $G$")
