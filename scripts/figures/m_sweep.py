@@ -14,7 +14,7 @@ _style.apply()
 _, molecules = load_molecules()
 
 SIGMA = 1e-4
-TRIALS = 8
+TRIALS = 100
 COLORS = [_style.BRICK, _style.OCHRE, _style.TEAL, _style.NAVY]
 
 MAX_EXTRA_GRIDS = 1
@@ -28,7 +28,7 @@ CACHE_FILE = DATA / "m_sweep.npz"
 
 
 def cache_key_for(key, factor):
-    return f"{key}__{factor:g}"
+    return f"{key}__{factor:g}__{TRIALS}trials"
 
 
 def sweep_M_noisy_gs(mol, M_values, window, tau, sigma, trials, seed0):

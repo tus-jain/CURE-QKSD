@@ -12,6 +12,7 @@ from scripts.data.run_sweeps import (
     FACTORS_NOISELESS,
     M_NOISY,
     M_PER_SYSTEM,
+    NOISE_TRIALS,
     NOISY_STATE,
     NUM_STATES,
     RNG_SEED,
@@ -71,7 +72,7 @@ for key, factor in cases:
         window_for(molecule, state + 1),
         np.asarray([factor]),
         SIGMA_MAIN,
-        8,
+        NOISE_TRIALS,
         seed,
         state=state,
     )

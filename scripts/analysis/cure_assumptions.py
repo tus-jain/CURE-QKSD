@@ -2,14 +2,14 @@ import zlib
 import numpy as np
 from scipy.signal import find_peaks
 from cure_qksd import engine as qe
-from scripts.data.run_sweeps import (RNG_SEED, SIGMA_MAIN, MAX_EXTRA_GRIDS, NUM_STATES, NOISY_STATE, window_for, tau_alias_of)
+from scripts.data.run_sweeps import (RNG_SEED, SIGMA_MAIN, NOISE_TRIALS, MAX_EXTRA_GRIDS, NUM_STATES, NOISY_STATE, window_for, tau_alias_of)
 from cure_qksd.open_data import load_molecules, load_sweeps
 
 SYSTEMS = ["H6", "HF", "N2", "LiH", "H2O_R1.4", "BeH2"]
 ACCEPT = qe.ACCEPT_LEVEL
 NONZERO = 1e-10
 DEGENERATE = 1e-8
-N_REAL = 8
+N_REAL = NOISE_TRIALS
 
 _, molecules = load_molecules()
 _, results = load_sweeps()
@@ -193,9 +193,10 @@ for label, sigma in [("Fig. 7", 0.0), ("Fig. 8", SIGMA_MAIN)]:
             base_wrong = [f for f, e in zip(tn["factors"], tn["cure1_errors"]) for x in e if not x < 1e-2]
             both_wrong = [f for f, e in zip(tn["factors"], tn["cure_errors"]) for x in e if not x < 1e-2]
             base_only = sorted(set(base_wrong) - set(both_wrong))
+            n_trials = tn["cure_errors"].shape[1]
             print(f"   {label} {key:9s} (state {k_state}): base run alone wrong where CURE-QKSD is right at "
                   f"{base_only if base_only else 'no tau'}"
-                  + (f"; wrong realizations there: " + ", ".join(f"{f:g}: {base_wrong.count(f)}/8" for f in base_only) if base_only else ""))
+                  + (f"; wrong realizations there: " + ", ".join(f"{f:g}: {base_wrong.count(f)}/{n_trials}" for f in base_only) if base_only else ""))
             continue
         n = n_targets(key)
         window = window_for(mol, n)

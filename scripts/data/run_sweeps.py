@@ -9,6 +9,7 @@ from cure_qksd.open_data import load_molecules, load_sweeps, save_sweeps
 
 RNG_SEED = 20260914
 SIGMA_MAIN = 1e-4
+NOISE_TRIALS = 100
 MAX_EXTRA_GRIDS = 1
 WEIGHT_CUTOFF = 1e-3
 WINDOW_BUFFER = 0.10
@@ -36,7 +37,7 @@ DEFAULT_MAX_FACTOR = 7.0
 FACTORS_NOISY = {
     "H6": [0.1, 0.2, 0.3, 0.5, 0.8, 1.0, 1.3, 1.7, 2.2],
     "HF": [0.5, 1.0, 2.0, 4.0, 6.0, 8.0, 10.0, 13.7, 16.0, 20.0, 25.0],
-    "N2": [0.5, 1, 2, 5, 10, 17, 26, 34, 43, 51, 60, 68, 77, 86, 94, 103, 120],
+    "N2": [0.5, 1, 2, 5, 10, 17, 26, 34, 43, 51, 60, 68, 77, 86],
     "H2O_R1.4": [0.1, 0.2, 0.3, 0.5, 0.8, 1.0, 1.3, 1.7, 2.2, 2.8, 3.5, 4.3, 5.2, 6.2, 7.3, 8.5, 10.0],
 }
 
@@ -147,7 +148,7 @@ def _cache_key_for(key, mol):
         factors_noisy = (base_grid[base_grid <= max_factor][:-1] if len(fn) > 1 else fn).tolist()
     return [
         M, M_noisy, n_states, wcut, factors_noiseless, factors_noisy,
-        SIGMA_MAIN, MAX_EXTRA_GRIDS, NOISY_STATE.get(key, 0), qe.ACCEPT_RULE, qe.FILL_RULE,
+        SIGMA_MAIN, NOISE_TRIALS, MAX_EXTRA_GRIDS, NOISY_STATE.get(key, 0), qe.ACCEPT_RULE, qe.FILL_RULE,
         "noisy_sweep",
         WINDOW_RULE,
         list(window_for(mol, n_states)), list(window_for(mol, 1)),
@@ -224,7 +225,8 @@ def main():
         t0 = time.time()
         state = NOISY_STATE.get(key, 0)
         window_noisy = window_for(mol, state + 1)
-        r_tau_noisy = sweep_tau_noisy(mol, M_noisy, window_noisy, factors_noisy, SIGMA_MAIN, trials=8,
+        r_tau_noisy = sweep_tau_noisy(mol, M_noisy, window_noisy, factors_noisy, SIGMA_MAIN,
+                                       trials=NOISE_TRIALS,
                                        seed0=RNG_SEED + zlib.crc32(key.encode()) % 1000, weight_rel_cutoff=wcut,
                                        state=state)
         print(f"  tau-sweep (noisy, sigma={SIGMA_MAIN:.0e}): {time.time()-t0:.1f}s")
@@ -238,6 +240,7 @@ def main():
             "tau_alias_per_state": np.pi / np.abs(mol.exact_energies[:n_states]),
             "tau_noiseless": r_tau_noiseless, "M_noiseless": r_M_noiseless,
             "tau_noisy": r_tau_noisy, "noisy_state": NOISY_STATE.get(key, 0), "window_noisy": window_for(mol, NOISY_STATE.get(key, 0) + 1),
+            "noise_trials": NOISE_TRIALS,
             "accept_level": qe.ACCEPT_LEVEL,
             "_cache_key": cache_key,
         }

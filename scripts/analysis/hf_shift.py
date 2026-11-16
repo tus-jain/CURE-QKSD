@@ -66,9 +66,9 @@ for key in ["H6", "HF", "N2"]:
         sh, cu = np.array(sh), np.array(cu)
         wrong = np.sum(~(sh < WRONG), axis=0)
         cwrong = np.sum(~(cu < WRONG), axis=0)
-        print(f"   {f:6.1f}  {tau:8.3f}  | {np.nanmedian(sh[:,0]):9.2e}, {wrong[0]}/8      | "
-              f"{np.nanmedian(sh[:,k]):9.2e}, {wrong[k]}/8      | {np.nanmedian(cu[:,0]):.1e}, {np.nanmedian(cu[:,k]):.1e}"
-              f"  (CURE wrong {cwrong[0]}/8, {cwrong[k]}/8)")
+        print(f"   {f:6.1f}  {tau:8.3f}  | {np.nanmedian(sh[:,0]):9.2e}, {wrong[0]}/{N_REAL}      | "
+              f"{np.nanmedian(sh[:,k]):9.2e}, {wrong[k]}/{N_REAL}      | {np.nanmedian(cu[:,0]):.1e}, {np.nanmedian(cu[:,k]):.1e}"
+              f"  (CURE wrong {cwrong[0]}/{N_REAL}, {cwrong[k]}/{N_REAL})")
         aliased_k = tau > np.pi / abs(exact[k])
         if not reported_first and aliased_k and wrong.max() == N_REAL and cwrong.max() == 0:
             reported_first = True

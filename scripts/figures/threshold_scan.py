@@ -49,7 +49,7 @@ for i, M in enumerate(M_values):
     autocorr_clean = autocorrelation(energies, weights, M, tau)
     noise_norm = median_noise_norm(M)
     rng = np.random.default_rng(1000 + M)
-    trial_counts = np.empty(31)
+    trial_counts = np.empty(100)
     for trial in range(len(trial_counts)):
         _, S_noisy = sf_from_autocorr(
             add_autocorr_noise(autocorr_clean, SIGMA, rng), M
@@ -74,7 +74,7 @@ thresholds = np.logspace(-5, -1, 141)
 M_demo = [6, 36, 80]
 colors = [_style.NAVY, _style.OCHRE, _style.BRICK]
 styles = ["-", "--", "-."]
-n_trials = 21
+n_trials = 100
 error_level = 1.0e-2
 
 for M, color, style in zip(M_demo, colors, styles):

@@ -50,6 +50,7 @@
           5.2
         ],
         0.0001,
+        100,
         1,
         0,
         "L_total_ge_0.9999",
@@ -73,6 +74,7 @@
       },
       "hf_gap": 0.31790511508283265,
       "max_factor_tested": 7.0,
+      "noise_trials": 100,
       "noisy_state": 0,
       "tau_alias": 0.20463956224524849,
       "tau_alias_per_state": {
@@ -101,50 +103,50 @@
       },
       "tau_noisy": {
         "cure1_errors": {
-          "__array__": "array_11"
-        },
-        "cure1_median": {
           "__array__": "array_12"
         },
-        "cure1_q25": {
-          "__array__": "array_13"
-        },
-        "cure1_q75": {
-          "__array__": "array_14"
-        },
-        "cure_errors": {
-          "__array__": "array_15"
-        },
-        "cure_median": {
-          "__array__": "array_16"
-        },
-        "cure_q25": {
-          "__array__": "array_17"
-        },
-        "cure_q75": {
-          "__array__": "array_18"
-        },
-        "factors": {
-          "__array__": "array_19"
-        },
-        "n_grids": {
+        "cure1_median": {
           "__array__": "array_20"
         },
-        "plain_errors": {
+        "cure1_q25": {
+          "__array__": "array_14"
+        },
+        "cure1_q75": {
+          "__array__": "array_17"
+        },
+        "cure_errors": {
+          "__array__": "array_13"
+        },
+        "cure_median": {
+          "__array__": "array_24"
+        },
+        "cure_q25": {
           "__array__": "array_21"
         },
-        "plain_median": {
+        "cure_q75": {
           "__array__": "array_22"
         },
-        "plain_q25": {
+        "factors": {
+          "__array__": "array_18"
+        },
+        "n_grids": {
           "__array__": "array_23"
         },
+        "plain_errors": {
+          "__array__": "array_15"
+        },
+        "plain_median": {
+          "__array__": "array_16"
+        },
+        "plain_q25": {
+          "__array__": "array_25"
+        },
         "plain_q75": {
-          "__array__": "array_24"
+          "__array__": "array_19"
         },
         "state": 0,
         "tau": {
-          "__array__": "array_25"
+          "__array__": "array_11"
         },
         "tau_alias": 0.20463956224524849
       },
@@ -230,6 +232,7 @@
           10.0
         ],
         0.0001,
+        100,
         1,
         0,
         "L_total_ge_0.9999",
@@ -253,6 +256,7 @@
       },
       "hf_gap": 0.6757465956920541,
       "max_factor_tested": 7.0,
+      "noise_trials": 100,
       "noisy_state": 0,
       "tau_alias": 0.04193807597937291,
       "tau_alias_per_state": {
@@ -281,50 +285,50 @@
       },
       "tau_noisy": {
         "cure1_errors": {
-          "__array__": "array_37"
-        },
-        "cure1_median": {
           "__array__": "array_38"
         },
-        "cure1_q25": {
-          "__array__": "array_39"
-        },
-        "cure1_q75": {
-          "__array__": "array_40"
-        },
-        "cure_errors": {
-          "__array__": "array_41"
-        },
-        "cure_median": {
-          "__array__": "array_42"
-        },
-        "cure_q25": {
-          "__array__": "array_43"
-        },
-        "cure_q75": {
-          "__array__": "array_44"
-        },
-        "factors": {
-          "__array__": "array_45"
-        },
-        "n_grids": {
+        "cure1_median": {
           "__array__": "array_46"
         },
-        "plain_errors": {
+        "cure1_q25": {
+          "__array__": "array_40"
+        },
+        "cure1_q75": {
+          "__array__": "array_43"
+        },
+        "cure_errors": {
+          "__array__": "array_39"
+        },
+        "cure_median": {
+          "__array__": "array_50"
+        },
+        "cure_q25": {
           "__array__": "array_47"
         },
-        "plain_median": {
+        "cure_q75": {
           "__array__": "array_48"
         },
-        "plain_q25": {
+        "factors": {
+          "__array__": "array_44"
+        },
+        "n_grids": {
           "__array__": "array_49"
         },
+        "plain_errors": {
+          "__array__": "array_41"
+        },
+        "plain_median": {
+          "__array__": "array_42"
+        },
+        "plain_q25": {
+          "__array__": "array_51"
+        },
         "plain_q75": {
-          "__array__": "array_50"
+          "__array__": "array_45"
         },
         "state": 0,
         "tau": {
-          "__array__": "array_51"
+          "__array__": "array_37"
         },
         "tau_alias": 0.04193807597937291
       },
@@ -387,6 +391,7 @@
           2.2
         ],
         0.0001,
+        100,
         1,
         1,
         "L_total_ge_0.9999",
@@ -410,6 +415,7 @@
       },
       "hf_gap": 0.3572103013402149,
       "max_factor_tested": 3.0,
+      "noise_trials": 100,
       "noisy_state": 1,
       "tau_alias": 1.0487478011658669,
       "tau_alias_per_state": {
@@ -438,50 +444,50 @@
       },
       "tau_noisy": {
         "cure1_errors": {
-          "__array__": "array_63"
-        },
-        "cure1_median": {
           "__array__": "array_64"
         },
-        "cure1_q25": {
-          "__array__": "array_65"
-        },
-        "cure1_q75": {
-          "__array__": "array_66"
-        },
-        "cure_errors": {
-          "__array__": "array_67"
-        },
-        "cure_median": {
-          "__array__": "array_68"
-        },
-        "cure_q25": {
-          "__array__": "array_69"
-        },
-        "cure_q75": {
-          "__array__": "array_70"
-        },
-        "factors": {
-          "__array__": "array_71"
-        },
-        "n_grids": {
+        "cure1_median": {
           "__array__": "array_72"
         },
-        "plain_errors": {
+        "cure1_q25": {
+          "__array__": "array_66"
+        },
+        "cure1_q75": {
+          "__array__": "array_69"
+        },
+        "cure_errors": {
+          "__array__": "array_65"
+        },
+        "cure_median": {
+          "__array__": "array_76"
+        },
+        "cure_q25": {
           "__array__": "array_73"
         },
-        "plain_median": {
+        "cure_q75": {
           "__array__": "array_74"
         },
-        "plain_q25": {
+        "factors": {
+          "__array__": "array_70"
+        },
+        "n_grids": {
           "__array__": "array_75"
         },
+        "plain_errors": {
+          "__array__": "array_67"
+        },
+        "plain_median": {
+          "__array__": "array_68"
+        },
+        "plain_q25": {
+          "__array__": "array_77"
+        },
         "plain_q75": {
-          "__array__": "array_76"
+          "__array__": "array_71"
         },
         "state": 1,
         "tau": {
-          "__array__": "array_77"
+          "__array__": "array_63"
         },
         "tau_alias": 1.0487478011658669
       },
@@ -555,6 +561,7 @@
           25.0
         ],
         0.0001,
+        100,
         1,
         1,
         "L_total_ge_0.9999",
@@ -578,6 +585,7 @@
       },
       "hf_gap": 0.6394365536935422,
       "max_factor_tested": 7.0,
+      "noise_trials": 100,
       "noisy_state": 1,
       "tau_alias": 0.031888074063695086,
       "tau_alias_per_state": {
@@ -606,50 +614,50 @@
       },
       "tau_noisy": {
         "cure1_errors": {
-          "__array__": "array_89"
-        },
-        "cure1_median": {
           "__array__": "array_90"
         },
-        "cure1_q25": {
-          "__array__": "array_91"
-        },
-        "cure1_q75": {
-          "__array__": "array_92"
-        },
-        "cure_errors": {
-          "__array__": "array_93"
-        },
-        "cure_median": {
-          "__array__": "array_94"
-        },
-        "cure_q25": {
-          "__array__": "array_95"
-        },
-        "cure_q75": {
-          "__array__": "array_96"
-        },
-        "factors": {
-          "__array__": "array_97"
-        },
-        "n_grids": {
+        "cure1_median": {
           "__array__": "array_98"
         },
-        "plain_errors": {
+        "cure1_q25": {
+          "__array__": "array_92"
+        },
+        "cure1_q75": {
+          "__array__": "array_95"
+        },
+        "cure_errors": {
+          "__array__": "array_91"
+        },
+        "cure_median": {
+          "__array__": "array_102"
+        },
+        "cure_q25": {
           "__array__": "array_99"
         },
-        "plain_median": {
+        "cure_q75": {
           "__array__": "array_100"
         },
-        "plain_q25": {
+        "factors": {
+          "__array__": "array_96"
+        },
+        "n_grids": {
           "__array__": "array_101"
         },
+        "plain_errors": {
+          "__array__": "array_93"
+        },
+        "plain_median": {
+          "__array__": "array_94"
+        },
+        "plain_q25": {
+          "__array__": "array_103"
+        },
         "plain_q75": {
-          "__array__": "array_102"
+          "__array__": "array_97"
         },
         "state": 1,
         "tau": {
-          "__array__": "array_103"
+          "__array__": "array_89"
         },
         "tau_alias": 0.031888074063695086
       },
@@ -714,6 +722,7 @@
           5.2
         ],
         0.0001,
+        100,
         1,
         0,
         "L_total_ge_0.9999",
@@ -737,6 +746,7 @@
       },
       "hf_gap": 0.19034108480631454,
       "max_factor_tested": 7.0,
+      "noise_trials": 100,
       "noisy_state": 0,
       "tau_alias": 0.4034384856524176,
       "tau_alias_per_state": {
@@ -765,50 +775,50 @@
       },
       "tau_noisy": {
         "cure1_errors": {
-          "__array__": "array_115"
-        },
-        "cure1_median": {
           "__array__": "array_116"
         },
-        "cure1_q25": {
-          "__array__": "array_117"
-        },
-        "cure1_q75": {
-          "__array__": "array_118"
-        },
-        "cure_errors": {
-          "__array__": "array_119"
-        },
-        "cure_median": {
-          "__array__": "array_120"
-        },
-        "cure_q25": {
-          "__array__": "array_121"
-        },
-        "cure_q75": {
-          "__array__": "array_122"
-        },
-        "factors": {
-          "__array__": "array_123"
-        },
-        "n_grids": {
+        "cure1_median": {
           "__array__": "array_124"
         },
-        "plain_errors": {
+        "cure1_q25": {
+          "__array__": "array_118"
+        },
+        "cure1_q75": {
+          "__array__": "array_121"
+        },
+        "cure_errors": {
+          "__array__": "array_117"
+        },
+        "cure_median": {
+          "__array__": "array_128"
+        },
+        "cure_q25": {
           "__array__": "array_125"
         },
-        "plain_median": {
+        "cure_q75": {
           "__array__": "array_126"
         },
-        "plain_q25": {
+        "factors": {
+          "__array__": "array_122"
+        },
+        "n_grids": {
           "__array__": "array_127"
         },
+        "plain_errors": {
+          "__array__": "array_119"
+        },
+        "plain_median": {
+          "__array__": "array_120"
+        },
+        "plain_q25": {
+          "__array__": "array_129"
+        },
         "plain_q75": {
-          "__array__": "array_128"
+          "__array__": "array_123"
         },
         "state": 0,
         "tau": {
-          "__array__": "array_129"
+          "__array__": "array_115"
         },
         "tau_alias": 0.4034384856524176
       },
@@ -890,12 +900,10 @@
           60,
           68,
           77,
-          86,
-          94,
-          103,
-          120
+          86
         ],
         0.0001,
+        100,
         1,
         1,
         "L_total_ge_0.9999",
@@ -919,6 +927,7 @@
       },
       "hf_gap": 0.5153468180409378,
       "max_factor_tested": 7.0,
+      "noise_trials": 100,
       "noisy_state": 1,
       "tau_alias": 0.029201941910076818,
       "tau_alias_per_state": {
@@ -947,50 +956,50 @@
       },
       "tau_noisy": {
         "cure1_errors": {
-          "__array__": "array_141"
-        },
-        "cure1_median": {
           "__array__": "array_142"
         },
-        "cure1_q25": {
-          "__array__": "array_143"
-        },
-        "cure1_q75": {
-          "__array__": "array_144"
-        },
-        "cure_errors": {
-          "__array__": "array_145"
-        },
-        "cure_median": {
-          "__array__": "array_146"
-        },
-        "cure_q25": {
-          "__array__": "array_147"
-        },
-        "cure_q75": {
-          "__array__": "array_148"
-        },
-        "factors": {
-          "__array__": "array_149"
-        },
-        "n_grids": {
+        "cure1_median": {
           "__array__": "array_150"
         },
-        "plain_errors": {
+        "cure1_q25": {
+          "__array__": "array_144"
+        },
+        "cure1_q75": {
+          "__array__": "array_147"
+        },
+        "cure_errors": {
+          "__array__": "array_143"
+        },
+        "cure_median": {
+          "__array__": "array_154"
+        },
+        "cure_q25": {
           "__array__": "array_151"
         },
-        "plain_median": {
+        "cure_q75": {
           "__array__": "array_152"
         },
-        "plain_q25": {
+        "factors": {
+          "__array__": "array_148"
+        },
+        "n_grids": {
           "__array__": "array_153"
         },
+        "plain_errors": {
+          "__array__": "array_145"
+        },
+        "plain_median": {
+          "__array__": "array_146"
+        },
+        "plain_q25": {
+          "__array__": "array_155"
+        },
         "plain_q75": {
-          "__array__": "array_154"
+          "__array__": "array_149"
         },
         "state": 1,
         "tau": {
-          "__array__": "array_155"
+          "__array__": "array_141"
         },
         "tau_alias": 0.029201941910076818
       },

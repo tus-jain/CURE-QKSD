@@ -103,7 +103,7 @@ def scan_M(energies, weights, basis_time, M_values, thresholds, trials, seed0):
 
 energies, weights = build_spectrum()
 thresholds = np.logspace(-6, -1, 51)
-trials = 31
+trials = 100
 T_values = [10.0, 20.0, 40.0]
 M_min = 3
 M_max = 28

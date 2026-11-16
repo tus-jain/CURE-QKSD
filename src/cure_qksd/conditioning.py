@@ -53,7 +53,7 @@ def add_autocorr_noise(autocorr, sigma, rng):
     return noisy
 
 
-def median_noise_norm(M, sigma=SIGMA, trials=31, seed0=9000):
+def median_noise_norm(M, sigma=SIGMA, trials=100, seed0=9000):
     rng = np.random.default_rng(seed0 + M)
     norms = np.empty(trials)
     for trial in range(trials):

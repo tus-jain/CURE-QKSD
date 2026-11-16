@@ -22,7 +22,7 @@ python -m pip install -r requirements.txt
 ./reproduce.sh
 ```
 
-This regenerates all figures in `figures/` and prints Table I and the quoted numbers from the stored data in `data/`. Fig. 1 is rendered from its SVG source with headless Chrome or Chromium, which is found automatically or set with `CHROME_BIN=/path/to/chrome`.
+This regenerates all figures in `figures/` and prints Table I and the quoted numbers from the stored data in `data/`. The noisy ensembles in Figs. 2--4, 8, and 11 use 100 realizations. Fig. 1 is rendered from its SVG source with headless Chrome or Chromium, which is found automatically or set with `CHROME_BIN=/path/to/chrome`.
 
 To run a single script, use the repository root as the working directory and set the import path:
 
@@ -78,7 +78,7 @@ python scripts/data/run_scaling.py          # Fig. 9 and Appendix F, about 5 min
 
 ## Runtime
 
-With one thread per process, `reproduce.sh` takes about 5 minutes and `verify_subset.py` about 30 seconds on a laptop.
+With one thread per process, `reproduce.sh` takes about 40 minutes on a laptop, most of it in `scripts/analysis/cure_assumptions.py`, and `verify_subset.py` takes about 3 minutes.
 
 ## License and citation
 
