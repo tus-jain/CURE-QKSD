@@ -19,6 +19,7 @@ python scripts/figures/phase_landscape.py
 python scripts/figures/incommensurate.py
 python scripts/figures/noiseless.py
 python scripts/figures/noisy.py
+python scripts/figures/run_scaling.py
 python scripts/figures/hf_shift.py
 python scripts/figures/m_sweep.py
 python scripts/figures/table_i.py

@@ -44,21 +44,23 @@ python scripts/figures/noisy.py
 | Table I | `scripts/figures/table_i.py` | printed |
 | Fig. 7, noiseless molecular results | `scripts/figures/noiseless.py` | `figures/fig07_noiseless.pdf` |
 | Fig. 8, noisy molecular results | `scripts/figures/noisy.py` | `figures/fig08_noisy.pdf` |
-| Fig. 9, Hartree–Fock shift | `scripts/figures/hf_shift.py` | `figures/fig09_hf_shift.pdf` |
-| Fig. 10, error versus Krylov dimension | `scripts/figures/m_sweep.py` | `figures/fig10_m_sweep.pdf` |
-| Sec. III E, Hartree–Fock shift for H<sub>6</sub>, HF, and N<sub>2</sub> | `scripts/analysis/hf_shift.py` | printed |
+| Fig. 9, images and winding numbers versus the number of runs | `scripts/figures/run_scaling.py` | `figures/fig09_run_scaling.pdf` |
+| Fig. 10, Hartree–Fock shift | `scripts/figures/hf_shift.py` | `figures/fig10_hf_shift.pdf` |
+| Fig. 11, error versus Krylov dimension | `scripts/figures/m_sweep.py` | `figures/fig11_m_sweep.pdf` |
+| Sec. III F, Hartree–Fock shift for H<sub>6</sub>, HF, and N<sub>2</sub> | `scripts/analysis/hf_shift.py` | printed |
 | Sec. III and Appendix D, window margins, reference weights, image peaks, and second runs | `scripts/analysis/cure_assumptions.py` | printed |
 | Appendix E, root weights | `scripts/analysis/root_weights.py` | printed |
 
 Each figure script also prints the numbers quoted in the text for that figure.
 
-The method is implemented in `src/cure_qksd/engine.py` (`run_cure_qksd`). The model spectrum of Figs. 2–4 is in `src/cure_qksd/conditioning.py`.
+The method is implemented in `src/cure_qksd/engine.py` (`run_cure_qksd`). The model spectrum of Figs. 2–4 is in `src/cure_qksd/conditioning.py`, and the many-run tests of Sec. III E and Appendix F are in `src/cure_qksd/scaling.py`.
 
 ## Data
 
 - `data/molecules/`: for each molecule, the Hamiltonian in a symmetry sector of the Hartree–Fock reference (sparse), the reference state, the exact energies and reference weights of the targeted states, E<sub>HF</sub>, E<sub>CCSD</sub>, and the HOMO–LUMO gap. Geometries and basis sets are in `systems.json`.
 - `data/sweeps/`: the noiseless and noisy time-step sweeps of Figs. 7 and 8.
-- `data/m_sweep.npz`: the medians of Fig. 10.
+- `data/scaling/`: the synthetic and N<sub>2</sub> many-run tests of Fig. 9 and Appendix F.
+- `data/m_sweep.npz`: the medians of Fig. 11.
 
 Arrays are stored as NPZ and metadata as JSON.
 
@@ -69,13 +71,14 @@ export PYTHONPATH=src:.
 python scripts/data/build_molecules.py      # PySCF and OpenFermion
 python scripts/data/run_sweeps.py           # all molecules
 python scripts/data/run_sweeps.py N2        # one molecule
+python scripts/data/run_scaling.py          # Fig. 9 and Appendix F, about 5 minutes
 ```
 
 `python scripts/analysis/verify_subset.py` rebuilds LiH, reruns the H<sub>6</sub> noiseless sweep, recomputes three noisy medians, and compares them with the stored data.
 
 ## Runtime
 
-With one thread per process, `reproduce.sh` takes about 3 minutes and `verify_subset.py` about 30 seconds on a laptop.
+With one thread per process, `reproduce.sh` takes about 5 minutes and `verify_subset.py` about 30 seconds on a laptop.
 
 ## License and citation
 

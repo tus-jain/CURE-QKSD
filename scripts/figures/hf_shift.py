@@ -72,4 +72,4 @@ handles = [Line2D([], [], color=_style.NAVY, lw=0.9),
 labels = ["returned energy", "exact energies", r"exact $E_0$, $E_1$",
           r"reported $E_0$, $E_1$"]
 axes[0].legend(handles, labels, loc="lower left", fontsize=6.8)
-fig.savefig(_style.figure_path("fig09_hf_shift.pdf"), bbox_inches="tight")
+fig.savefig(_style.figure_path("fig10_hf_shift.pdf"), bbox_inches="tight")

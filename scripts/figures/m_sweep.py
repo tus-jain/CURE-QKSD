@@ -91,8 +91,8 @@ fig.legend(handles, labels, loc="upper center", ncol=4, fontsize=7.0, frameon=Fa
            title_fontsize=6.5)
 
 fig.tight_layout()
-fig.savefig(_style.figure_path("fig10_m_sweep.pdf"), bbox_inches="tight")
-print("wrote fig10_m_sweep.pdf")
+fig.savefig(_style.figure_path("fig11_m_sweep.pdf"), bbox_inches="tight")
+print("wrote fig11_m_sweep.pdf")
 for key, M_values, tau_factors in CASES:
     print(f"\n{key}")
     for factor in tau_factors:
