@@ -79,10 +79,12 @@ def no_removal_stop(n_peaks):
 
 
 print(f"\neps_g: g=2 {sc.eps_g(2):.3f} rad, g=6 {sc.eps_g(6):.3f} rad; p for R=10: {p_est(10, 2):.3f}")
-print("\nSynthetic survival per run, measured / estimate (g = 2..6, Nb = 10):")
-for R in COLORS:
-    r = ratios(images(syn, f"R{R}_Nb10_s0.005"))
-    print(f"  R={R:2d}: " + " ".join("  -  " if np.isnan(v) else f"{v / p_est(R, g + 2):.2f}" for g, v in enumerate(r)))
+print("\nSynthetic survival per run, measured / estimate (g = 2..6, at least 20 images before the run):")
+for Nb in (10, 1, 100):
+    for R in COLORS:
+        r = ratios(images(syn, f"R{R}_Nb{Nb}_s0.005"))
+        print(f"  Nb={Nb:3d} R={R:2d}: " + " ".join("  -  " if np.isnan(v) else f"{v / p_est(R, g + 2):.2f}"
+                                                  for g, v in enumerate(r)))
 print("\nN2 survival at run 2, measured / estimate:")
 for Nb in (3, 10, 30):
     tag = f"n2_Nb{Nb}"
