@@ -11,7 +11,7 @@ phi = (1.0 + np.sqrt(5.0)) / 2.0
 tau1 = 2.0
 tau2 = tau1 / phi
 
-E_grid = np.linspace(-2.6, 4.6, 4000)
+E_grid = np.linspace(-2.6, 1.8, 4000)
 
 
 def landscape(tau, E_grid, energies):
