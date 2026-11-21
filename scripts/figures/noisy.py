@@ -1,19 +1,26 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from cure_qksd import style as _style
-from cure_qksd.plot_labels import PLOT_TITLE
 from cure_qksd.open_data import load_sweeps
 
 _style.apply()
 
 systems, results = load_sweeps()
 
-LAYOUT = [["LiH", "H6"], ["H2O_R1.4", "HF"], ["BeH2", "N2"]]
+LAYOUT = [["LiH", "H2O_R1.4", "BeH2"], ["H6", "HF", "N2"]]
 STATE_NAME = {0: "ground state", 1: "1st excited state"}
+SYSTEM_NAME = {
+    "LiH": "LiH",
+    "H2O_R1.4": r"H$_2$O",
+    "BeH2": r"BeH$_2$",
+    "H6": r"H$_6$",
+    "HF": "HF",
+    "N2": r"N$_2$",
+}
 BASE_ONLY = "#7f8c8d"
 N2_MAX_FACTOR = 86.0
 
-fig, axes = plt.subplots(3, 2, figsize=(7.0, 7.2))
+fig, axes = plt.subplots(2, 3, figsize=(7.0, 4.9))
 any_missing = False
 
 for row, keys in enumerate(LAYOUT):
@@ -46,7 +53,7 @@ for row, keys in enumerate(LAYOUT):
         ax.axvspan(1.0, x[shown].max() * 1.02, color=_style.SLATE, alpha=0.08, zorder=0)
         ax.axhline(1.6e-3, color=_style.INK, linewidth=0.6, linestyle=":", alpha=0.6)
         M_noisy = results[key].get("M_noisy", results[key]["M"])
-        ax.set_title(rf"{PLOT_TITLE[key]}, {STATE_NAME[k]}, $M={M_noisy}$", loc="left", fontsize=7.2)
+        ax.set_title(rf"{SYSTEM_NAME[key]}, {STATE_NAME[k]}, $M={M_noisy}$", loc="left", fontsize=7.2)
         ax.set_yscale("log")
 
 handles = [
